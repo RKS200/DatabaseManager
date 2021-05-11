@@ -2,16 +2,20 @@ import pyrebase
 import pickle
 import csv
 
+#Loading Data from the configration file.
 file = open("Data.pyrebaseConfig","rb")
 config = {}
 config = pickle.load(file)
 file.close()
 
+#Creating database object.
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
 a = False
 
+
+#Functions.........
 def insert():
     name = input("Enter the Name: ")
     all_users = db.child("User").get()
@@ -127,7 +131,12 @@ def Importcsv():
             data = {path:{"Age":age,"DOB":dob}}
             db.update(data)
         print("Data Uploaded!")
-    
+#End of functions.....
+
+
+
+
+#Printing Menu
 print(40*'*')
 print("Pyrebase based Databse Manager")
 print(40*('*'))
@@ -141,6 +150,9 @@ print('''1.Inserting a Data.
 6.Export the Data as .csv file.
 7.Import a .csv file and upload it.''')
 print(40*'*')
+
+
+#Getting input and running the entire pgm..
 case = int(input("Enter a Operation(Its S.no): "))
 if case == 1:
     insert()
@@ -159,3 +171,4 @@ elif case == 7:
 else:
     print("Operaion Does not Exists!\n\nERR: Not a valid input")
 
+#End of he pgm
