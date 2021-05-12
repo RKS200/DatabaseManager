@@ -3,7 +3,7 @@ import pickle
 import csv
 
 #Loading Data from the configration file.
-file = open("Data.pyrebaseConfig","rb")
+file = open("Configuration.pyrebaseConfig","rb")
 config = {}
 config = pickle.load(file)
 file.close()
