@@ -3,8 +3,8 @@ This is created using [Pyrebase](https://www.google.com/url?sa=t&rct=j&q=&esrc=s
 So, you should install pyrebase.
 
 ### [DatabaseManager.py](https://github.com/RKS200/DatabaseManager/blob/main/DatabaseManager.py)
-This file is a python file which contains the main code.You Should run this in order to run this project.
-### [Data.pyrebaseConfig](https://github.com/RKS200/DatabaseManager/blob/main/Data.pyrebaseConfig)
+This file is a python file which contains the main code. **You Should run this in order to run this project.(in release [v2021.0](https://github.com/RKS200/DatabaseManager/releases/tag/v2021.0) )**
+### [Configuration.pyrebaseConfig](https://github.com/RKS200/DatabaseManager/blob/main/Configuration.pyrebaseConfig) (before in release [v2021.0](https://github.com/RKS200/DatabaseManager/releases/tag/v2021.0) [Data.pyrebaseConfig](https://github.com/RKS200/DatabaseManager/blob/main/Data.pyrebaseConfig))
 This file contains the details like api key,database URLs etc.It is encrypted using **pickle** :smiley:.
 ### [ImportFile.csv](https://github.com/RKS200/DatabaseManager/blob/main/ImportFile.csv)
 Enter the data in a csv file in the format that is exported in Exported file.
